@@ -1,8 +1,14 @@
+function strikeOut(){
+    document.querySelector('li').style.textDecoration = 'line-through'
+}
+strikeOut()
 
-
-
-
-
+function removeLine(){
+    let unorderedList = document.querySelector('ul')
+    let unorderedListItem = document.querySelector('ul>li')
+    unorderedList.removeChild(unorderedListItem)
+}
+removeLine()
 
 
 
