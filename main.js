@@ -29,10 +29,38 @@ let element = document.getElementById(id)
 }
 setSize('thing-1', '2em')
 
+//2.1-2
+function newArgument(element){
+const unorderedList = document.querySelector('#arguments')
+unorderedList.appendChild(element)
+}
+let newImage = document.createElement('img')
+newArgument(newImage)
 
+//2.3-4
+function imageSize(image){
+    document.querySelector(`${image}`).style.height = "30px"
+ }
+ imageSize("#image-1")
 
-
-
+//2.5-6
+ function makeInvisible(id){
+    let element = document.querySelector(`${id}`)
+    element.classList.add("invisible")
+ }
+ 
+ 
+ 
+ //3.1-2
+ function newLiText(text){
+    let newLiItem = document.createElement("li")
+    newLiItem.innerText = `${text}`
+    return newLiItem
+ }
+ let newText = newLiText("This is the end.")
+ newLiText(newText)
+ 
+ 
 
 
 
